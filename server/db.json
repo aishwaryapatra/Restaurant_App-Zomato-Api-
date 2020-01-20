@@ -1,0 +1,29 @@
+{
+  "fav": [
+    {
+      "name": "The Big Barbeque",
+      "photos_url": "",
+      "res_id": "19203051",
+      "username": "successfully logged in as aish",
+      "featured_image": "https://b.zmtcdn.com/data/pictures/1/19203051/a66fd8c5fb943a2e8e7f425a681b969d.jpeg?output-format=webp",
+      "id": 1
+    },
+    {
+      "name": "Hoot",
+      "photos_url": "",
+      "res_id": "18422898",
+      "username": "aish",
+      "featured_image": "https://b.zmtcdn.com/data/pictures/8/18422898/00b78b92b626c82c3c711d79f1e3188e.jpg?output-format=webp",
+      "id": 2
+    }
+  ],
+  "user": [
+    {
+      "username": "aishwarya",
+      "password": "bbs"
+    }
+  ],
+  "register": [
+    
+  ]
+}

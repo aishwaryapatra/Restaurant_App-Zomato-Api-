@@ -1,0 +1,19 @@
+.form-container {
+    border: 2px solid red;
+    width: 50vw;
+    margin-left: 400px;
+    
+}
+input[type=text] {
+    width: 30%;
+    padding: 8px 14px;
+    margin: 2px;
+    box-sizing: border-box;
+    border: 2px solid red;
+  }
+  button {
+    font-size: 12px;
+    margin: 2px;
+    padding: 8px 14px;
+    border: 2px solid red;
+}

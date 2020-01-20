@@ -1,0 +1,16 @@
+
+<section class="bo" >
+        
+    <mat-card class="cardstyle" *ngFor="let item of arr6">
+       
+       <mat-card-title>{{item.name}}</mat-card-title>
+       <mat-card-content><img class="imagestyle" src="{{item.featured_image}}"></mat-card-content>
+       <mat-card-content>{{item}}</mat-card-content>
+       <mat-card-content>{{item.res_id}}</mat-card-content>
+       <button type="submit" (click)="del(item.res_id)">Delete</button>
+       
+       
+   </mat-card>
+   
+    
+</section>

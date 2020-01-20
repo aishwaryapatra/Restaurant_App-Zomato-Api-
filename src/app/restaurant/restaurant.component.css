@@ -1,0 +1,56 @@
+.head {
+    color: red;
+    background-color: red;
+    justify-content: space-between;
+}
+ 
+.form-container
+{
+    align-content: center;
+    
+}
+.new-section {
+    height: 40vh;
+}
+input[type=text] {
+    width: 30%;
+    height: 20%;
+    padding: 8px 14px;
+    margin: 2px;
+    box-sizing: border-box;
+    border: 2px solid red;
+    margin-left: 500px;
+  }
+  button {
+    font-size: 12px;
+    margin: 2px;
+    padding: 8px 14px;
+    color: red;
+    border: 2px solid red;
+}
+.button1 {
+    height: 20%;
+}
+
+.imagestyle
+{
+   width:100px;
+   height:100px;
+}
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.cardstyle
+{
+margin-left:35%;
+margin-top:50px;
+width:30vw;
+height: 30vh;
+border: 2px solid red;
+display: flex;
+flex-direction: column;
+}
+

@@ -1,0 +1,28 @@
+.bo
+{
+    width:40vw;
+    margin:auto;
+    display:flex;
+    flex-direction: wrap;
+}
+.cardstyle
+{
+margin:20px;
+margin-top:50px;
+width:30vw;
+height: 30vh;
+border: 2px solid red;
+display: flex;
+flex-direction: column;
+}
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.imagestyle
+{
+   width:100px;
+   height:100px;
+}
+

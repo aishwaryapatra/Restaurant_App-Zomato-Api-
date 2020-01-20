@@ -1,0 +1,38 @@
+<mat-toolbar class="head">ZOMATO
+    <div>
+    <button (click)="register()">CREATE ACCOUNT</button>
+    <button  (click)="logIn()">LOGIN</button>
+    <button (click)="viewfav()">VIEW FAVOURITES</button>
+    <button (click)="logout()" *ngIf="flag1==true">LOGOUT</button>
+    <!-- <div><*ngIf="sessionStorage.getItem("key") !== null">
+        <button (click)="viewfav()">LOGOUT</button>   
+    </div> -->
+    
+</div>
+</mat-toolbar>
+
+
+<div class="form-container">
+    <form class="new-section" [ngStyle]="{background: 'url(/assets/download.jpeg)'}" [formGroup]="restaurantSearch" (ngSubmit)="search1()">
+        <br>
+        <img src="assets/unnamed.jpg"><br><br>
+        <input type="text" [formControl]='city' placeholder="Enter city">
+            
+        <button class="button1" type="submit" [disabled]='!restaurantSearch.valid'>Search</button>
+    </form>
+    </div>
+    <section *ngIf="flag==true">
+        <mat-card class="cardstyle" *ngFor="let item of arr2 | paginate: { itemsPerPage:3, currentPage:p}">
+            
+            <mat-card-title>{{item.name}}</mat-card-title>
+            <mat-card-content ><img class="imagestyle" src="{{item.featured_image}}" ></mat-card-content>
+            <!-- <mat-card-content>{{item.res_id}}</mat-card-content> -->
+            <mat-card-actions>
+                <button  (click)="addtofav(item.res_id)" mat-button>Add to faves</button>      
+              </mat-card-actions>
+            
+        </mat-card>
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </section>
+    
+    

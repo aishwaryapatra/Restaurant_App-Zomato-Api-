@@ -1,0 +1,23 @@
+  <mat-toolbar></mat-toolbar>
+  <div class="form-container">
+    <form [formGroup]="registerform" (ngSubmit)="submit()">
+        <br/><br/>
+        <label>
+            USER NAME :
+        </label>
+        <input type="text" [formControl]='name' class="name">
+        <br/>
+        <br/><br/><br/>
+        <label>
+            PASSWORD :
+        </label>
+        <input type="text" [formControl]='password' class="password">
+        <br/><br/>
+        <button type="submit" id="primaryButton" [disabled]='!registerform.valid'>REGISTER</button>
+        <br/>
+        
+    </form>
+    <br/><br/>
+    
+    <strong *ngIf="submitMessage" class="error-message">{{submitMessage}}</strong>
+</div>

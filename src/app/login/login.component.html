@@ -1,0 +1,30 @@
+
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="tohome()">Home Page</button>
+  <button mat-menu-item (click)="logout()">Logout</button>
+</mat-menu>
+<div class="form-container">
+    <form [formGroup]="loginform" (ngSubmit)="loginSubmit()">
+        <h1>Welcome to Login Page</h1>
+        <br/><br/>
+        <label>
+            USER NAME :
+        </label>
+        <input type="text" [formControl]='username' class="username">
+        <br/>
+        <br/><br/><br/>
+        <label>
+            PASSWORD :
+        </label>
+        <input type="text" [formControl]='password' class="password">
+        <br/><br/>
+        <button type="submit" id="primaryButton" [disabled]='!loginform.valid'>LOGIN</button>
+        <button type="submit" (click)="newLogin()">New User?</button>
+        <br/>
+        
+    </form>
+    <br/><br/>
+    <!-- <button (click)="logOut()">LOGOUT</button> -->
+    <strong *ngIf="submitMessage" class="error-message">{{submitMessage}}</strong>
+</div>
